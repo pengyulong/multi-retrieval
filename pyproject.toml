@@ -1,0 +1,26 @@
+[project]
+name = "multi-retrieval"
+version = "0.1.0"
+description = "Multi-Retrieval: Unified召回系统，支持向量召回、BM25召回、分片召回"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.21.0",
+    "faiss-cpu>=1.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
+rerank = [
+    "transformers>=4.30.0",
+    "torch>=2.0.0",
+]
+cohere = [
+    "requests>=2.28.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

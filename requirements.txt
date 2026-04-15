@@ -1,0 +1,21 @@
+# Core dependencies
+numpy>=1.21.0
+
+# Optional: Vector stores
+faiss-cpu>=1.7.0
+# milvus>=2.0.0  # For Milvus vector store
+# pinecone-client>=2.0.0  # For Pinecone
+
+# Optional: Embeddings
+sentence-transformers>=2.2.0
+
+# Optional: Reranking
+transformers>=4.30.0
+torch>=2.0.0
+
+# Optional: Cohere reranking
+requests>=2.28.0
+
+# Testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
